@@ -1,0 +1,28 @@
+.mobile-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    gap: 20px;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: none;
+    }
+
+    &__main {
+
+        background-color: transparent;
+        border: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: var(--color-primary-dark);
+    }
+
+    &__prev {
+        background-color: transparent;
+        border: none;
+        transform: rotate(180deg);
+    }
+}

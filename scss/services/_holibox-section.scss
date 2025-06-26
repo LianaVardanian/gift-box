@@ -1,0 +1,92 @@
+.holibox-section {
+    padding: 43px 0 48px;
+
+    &__container {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+    }
+
+    &__card {
+        position: relative;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 38px;
+        background-color: var(--color-white);
+        bottom: 20px;
+        left: 20px;
+        z-index: 1;
+        height: 75px;
+        width: 510px;
+    }
+
+    &__text {
+        font-family: Roboto Condensed;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__btn {
+        width: 148px;
+        height: 46px;
+        border: 1px solid var(--color-secondary-black);
+        font-family: Roboto Condensed;
+        font-weight: 500;
+        font-size: 18px;
+        background-color: var(--color-white);
+    }
+}
+
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    width: 85%;
+    /* <== ключевая ширина */
+    flex-shrink: 0;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .swiper-slide {
+        width: calc(33.33% - 12px);
+        /* 3 в ряд на десктопе */
+    }
+}

@@ -1,0 +1,318 @@
+.grid-section {
+    display: grid;
+    gap: 12px;
+
+    @media screen and (min-width:$bp-tablet) {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+    }
+
+    @media screen and (min-width:$bp-desktop) {
+        grid-template-columns: repeat(4, 320px);
+        grid-template-rows: repeat(3, auto);
+        gap: 26px;
+        padding-bottom: 21px;
+    }
+
+
+    &__card {
+        &--1 {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+        &--4 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        &--8 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        &--9 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        &--5 {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        &--6 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        &--7 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    }
+
+    &__filter-container {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: block;
+            background-color: var(--filter-bg);
+            padding: 30px 45px 40px 25px;
+            width: auto;
+            height: auto;
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+    }
+
+    &__filter-mob {
+        display: block;
+        padding: 30px 45px 40px 25px;
+        width: auto;
+        height: auto;
+        grid-column: 1/2;
+        grid-row: 1/3;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+
+    }
+
+    &__filter-title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        font-family: 'Roboto Condensed';
+        font-weight: 500;
+        font-size: 22px;
+
+    }
+
+    &__filter-text {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    //Price//
+    &__filter-range {
+        width: auto;
+
+        @media screen and (min-width:$bp-desktop) {
+            width: 250px;
+            font-family: sans-serif;
+            color: #333;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__filter-info {
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: capitalize;
+        padding-bottom: 12px;
+    }
+
+    &__filter-output {
+        display: flex;
+        justify-content: center;
+        padding-left: 105px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    &__filter-labels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        // margin-top: 1px;
+    }
+
+    //
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 6px;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+    }
+
+
+    input[type="range"]::-webkit-slider-runnable-track {
+        height: 6px;
+        background: #ddd;
+        border-radius: 3px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        background: var(--color-primary-dark);
+        border-radius: 50%;
+        margin-top: -7px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb:hover {
+        background: var(--color-primary-dark);
+    }
+
+    input[type="range"]::-moz-range-track {
+        height: 6px;
+        background: #ddd;
+        border-radius: 3px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        height: 20px;
+        width: 20px;
+        background: var(--color-primary-dark);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    input[type="range"]::-ms-track {
+        height: 6px;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    input[type="range"]::-ms-fill-lower {
+        background: #ddd;
+    }
+
+    input[type="range"]::-ms-fill-upper {
+        background: #ddd;
+    }
+
+    input[type="range"]::-ms-thumb {
+        height: 20px;
+        width: 20px;
+        background: var(--color-primary-dark);
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__filter-label {
+        padding-bottom: 40px;
+    }
+
+    &__filter-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 65px;
+        padding-bottom: 45px;
+        width: fit-content;
+    }
+
+
+    &__filter-content {
+        cursor: pointer;
+        font-family: Roboto Condensed;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+
+    }
+
+    // occasion
+    &__filter-occasion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 13px;
+    }
+
+    &__filter-more {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: underline;
+        color: var(--color-secondary-grey);
+    }
+
+    // for whom
+    &__filter-gender {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px 52px;
+        padding-bottom: 40px;
+        width: fit-content;
+    }
+
+    &__filter-button {
+        display: flex;
+        justify-content: center;
+        width: 140px;
+        height: 45px;
+        border-radius: 2px;
+        padding: 12px 33px;
+        gap: 10px;
+        font-family: Roboto Condensed;
+        background-color: var(--color-white);
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__filter-btn {
+        display: flex;
+        text-align: center;
+        margin-left: 78px;
+    }
+
+
+    // card
+
+
+    &__card {
+        padding-bottom: 64px;
+        line-height: 1.2px;
+
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 20px;
+
+        :hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    &__info {
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    &__labels {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    &__sold {
+        font-weight: 400;
+        text-decoration-line: line-through;
+        color: #999;
+        padding-left: 5px;
+    }
+}

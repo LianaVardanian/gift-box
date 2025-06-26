@@ -1,0 +1,61 @@
+.review-section {
+    &__grid {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            gap: 50px 110px;
+        }
+    }
+
+    &__card {
+        margin-bottom: 30px;
+        width: 540px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    &__leaf {
+        height: 67px;
+        width: 58px;
+        flex-shrink: 0;
+        margin-top: -30px;
+    }
+
+    &__title {
+        font-family: Roboto Condensed;
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-family: Roboto Condensed;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    &__button {
+        padding: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        width: 140px;
+        height: 45px;
+        border-radius: 2px;
+        background-color: var(--color-white);
+        font-family: Roboto Condensed;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 12px 0px;
+    }
+}

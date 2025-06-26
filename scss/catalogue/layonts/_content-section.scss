@@ -1,0 +1,13 @@
+.content-section {
+    padding-bottom: 60px;
+
+    &__text {
+        font-family: Roboto;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 2px;
+    }
+}

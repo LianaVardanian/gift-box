@@ -1,0 +1,57 @@
+@import './base';
+//utils
+@import'./index/utils/visually-hidden';
+@import'./index/utils/fonts';
+@import'./index/utils/variables';
+@import'./index/utils/texts';
+// Layonts
+@import'./index/layonts/header-section';
+@import'./index/layonts/hero-section';
+@import'./index/layonts/advantages-section';
+@import'./index/layonts/collection-section';
+@import'./index/layonts/contact-section';
+@import'./index/layonts/footer';
+@import'./index/layonts/partners-section';
+@import'./index/layonts/delivery-section';
+
+//catalogue
+@import'./catalogue/layonts/header-section';
+@import'./catalogue/layonts/grid-section';
+@import'./catalogue/layonts/content-section';
+@import'./catalogue/layonts/button-section';
+@import'./catalogue/layonts/viewed-section';
+
+
+//build your box 
+@import'./build/layonts/first-step';
+@import'./build/layonts/hero-section';
+//general
+@import'./general/main-title';
+@import'./general/navigation-section';
+@import'./general/card-section';
+
+// my bag
+@import'./bag/bag-section';
+@import'./bag/total-section';
+
+//faq 
+@import'./FAQ/faq-section';
+
+//services
+@import'./services/holibox-section';
+@import'./services/gift-section';
+
+//review
+@import'./testimonals/comment-section';
+@import'./testimonals/review-section';
+
+//large lady list
+@import'./lady-box/box-section';
+@import'./lady-box/list-section';
+
+// mobile menu
+@import'./mobile-menu/menu';
+@import'./mobile-menu/mobile-next';
+@import'./mobile-menu/mobile-filter';
+//birthday
+@import'./birthday/birthday-section';

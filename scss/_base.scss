@@ -1,0 +1,169 @@
+ ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     font-style: normal;
+     text-decoration: none;
+ }
+
+ a {
+     text-decoration: none;
+     display: inline-block;
+     white-space: nowrap;
+     color: var(--color-secondary-black);
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+     //  outline: 1px solid red;
+     /* Покажет границы всех элементов */
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+
+ }
+
+ .container {
+     width: 100%;
+     max-width: 1354px;
+     margin: 0 auto;
+     padding: 0 15px;
+ }
+
+ .section {
+     width: 100%;
+     max-width: 1346px;
+     margin: 0 auto;
+     padding: 0 15px;
+
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ H6,
+ p {
+     margin: 0px;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+ }
+
+
+ //
+
+ /* ===== MOBILE FIXES ===== */
+ @media screen and (min-width: 768px) {
+
+     body,
+     html {
+         overflow-x: hidden;
+         padding: 0;
+         margin: 0;
+     }
+
+     .container,
+     .section {
+         padding: 0 16px;
+         width: 100%;
+     }
+
+     img {
+         max-width: 100%;
+         height: auto;
+         display: block;
+     }
+
+     /* HERO SECTION MOBILE */
+     .hero-section {
+
+         &__mobile-images,
+         &__mobile-before,
+         &__mobile-after,
+         &__mobile-content {
+             width: 100%;
+             max-width: 100%;
+             height: auto;
+         }
+
+         &__mobile-content {
+             padding: 16px;
+             height: auto;
+         }
+     }
+
+     /* COLLECTION SECTION */
+     .collection-section {
+         &__content {
+             grid-template-columns: 1fr;
+             gap: 20px;
+         }
+
+         &__image {
+             width: 100%;
+         }
+
+     }
+
+     /* CONTACT GRID */
+     .contact-grid__image img,
+     .mobile-grid__image img {
+         width: 100%;
+         height: auto;
+     }
+
+     .contact-grid,
+     .mobile-grid {
+         padding: 0 16px;
+     }
+
+     /* FOOTER MOBILE FIX */
+     .footer-mobile {
+         &__top {
+             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+             gap: 24px;
+         }
+
+         &__section {
+             width: 100%;
+         }
+
+         &__text {
+             font-size: 14px;
+             word-wrap: break-word;
+         }
+     }
+
+
+     /* GRID SECTION (catalogue) */
+     .grid-section {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 16px;
+     }
+
+     .grid-section__filter-container {
+         grid-column: 1 / -1;
+         padding: 20px;
+     }
+
+     .grid-section__card {
+         padding-bottom: 32px;
+     }
+
+     /* SLIDERS */
+     .mobile-slider__slide {
+         width: 80px;
+         height: 80px;
+     }
+
+ }

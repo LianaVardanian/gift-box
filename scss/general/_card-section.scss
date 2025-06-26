@@ -1,0 +1,115 @@
+.card {
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+
+
+    &__hover {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    &__buttons {
+
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        display: flex;
+        gap: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 3;
+        padding-bottom: 20px;
+    }
+
+
+
+    &__icon {
+        width: 130px;
+        height: 50px;
+        background: white;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        font-size: 18px;
+        transition: background-color 0.2s ease;
+        border-radius: 4px;
+
+        @media screen and (min-width:$bp-tablet) {
+            width: 100px;
+            height: 53px;
+
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            width: 128px;
+            height: 53px;
+
+        }
+
+    }
+
+    &__title {
+        font-size: 14px;
+        margin-top: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #222;
+        margin-top: 6px;
+    }
+
+    &:hover &__buttons {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+    }
+
+
+    &:hover &__buttons {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+    }
+
+    .card:hover &__hover::after {
+        opacity: 1;
+    }
+
+    .card:hover &__image {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,30 @@
+.catalogue-section {
+    width: 100%;
+    background-color: var(--color-white);
+
+    &__nav {
+        background-color: var(--color-primary-dark);
+    }
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 52px;
+        }
+
+
+
+    }
+
+    &__link {
+        color: var(--color-white);
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}

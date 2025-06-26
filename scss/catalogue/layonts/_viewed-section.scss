@@ -1,0 +1,16 @@
+.viewed-section {
+    background-color: rgba(167, 147, 133, 0.1);
+    padding: 50px 0 96px;
+
+    &__images {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__title {
+        padding-bottom: 50px;
+        font-weight: 500;
+        font-size: 28px;
+    }
+}

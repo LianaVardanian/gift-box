@@ -1,0 +1,87 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--milk);
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 100;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+
+    &__burger {
+        display: flex;
+        border: none;
+        background-color: transparent;
+        // position: absolute;
+        // top: 50px;
+        // right: 100px;
+        cursor: pointer;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__btn-close {
+        display: flex;
+        padding: 0 50px;
+        position: absolute;
+        top: 50px;
+        right: 24px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        @media screen and (min-width:$bp-tablet) {
+            padding: 0 50px;
+        }
+    }
+
+    &__nav {
+        padding: 70px 20px;
+
+    }
+
+    &::after {
+        content: '';
+        background-image: url('/images/leaf-decor.png');
+        z-index: 3;
+        top: 30px;
+        left: 40px;
+        width: 100px;
+        height: 344px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: left;
+        font-size: 24px;
+        padding: 16px;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-transform: uppercase;
+        color: var(--color-primary-dark);
+        text-decoration: none;
+        transition: font-weight 0.2s;
+
+        @media screen and (min-width:$bp-tablet) {
+            justify-content: center;
+        }
+
+        &:hover {
+            color: var(color-primary-dark);
+            font-weight: 600;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+
+    }
+}

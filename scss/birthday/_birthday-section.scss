@@ -1,0 +1,8 @@
+.birthday-section {
+
+
+    &__grid {
+        grid-template-columns: repeat(4, 320px);
+        grid-template-rows: auto;
+    }
+}

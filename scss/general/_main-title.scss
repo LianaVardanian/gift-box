@@ -1,0 +1,46 @@
+    .main-title {
+        font-family: Cormorant Garamond;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 40px;
+        color: var(--color-secondary-black);
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 54px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 64px;
+        }
+
+        &.pad20 {
+            padding-bottom: 20px;
+        }
+
+        &.pad30 {
+            padding-bottom: 30px;
+        }
+
+        &.pad50 {
+            padding-bottom: 50px;
+        }
+    }
+
+    .steps-title {
+        font-family: Roboto Condensed;
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--titles);
+        text-align: center;
+    }
+
+    .steps-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+        padding-bottom: 50px;
+    }

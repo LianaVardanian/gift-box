@@ -1,0 +1,45 @@
+.hero-build-section {
+    padding: 0px 0 40px;
+
+    &__container {
+        padding: 35px 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(186, 165, 152, 0.1);
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 500px;
+        text-align: center;
+
+        @media screen and (min-width:$bp-desktop) {
+            flex-direction: row;
+            justify-content: center;
+            max-width: 1174px;
+            width: 100vw;
+            gap: 90px;
+        }
+
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-style: italic;
+        font-size: 24px;
+
+        @media screen and (min-width:$bp-desktop) {
+            font-size: 18px;
+        }
+    }
+
+    &__title {
+        font-family: Roboto Condensed;
+        font-weight: 400;
+        font-size: 24px;
+    }
+}

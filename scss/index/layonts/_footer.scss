@@ -1,0 +1,185 @@
+.footer {
+    display: none;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: flex;
+        position: relative;
+        background: rgba(210, 226, 220, 0.5);
+        padding: 40px 20px;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 19px 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+    }
+
+    &__address,
+    &__account,
+    &__nav {
+        flex: 1 1 30%;
+    }
+
+    &__address-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__address-menu li {
+        margin-bottom: 5px;
+    }
+
+
+    &__address-info {
+        margin-top: 20px;
+    }
+
+    &__title {
+        font-family: 'Roboto Condensed';
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    &__address-link {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__address-info img {
+        margin: 15px 0;
+        max-width: 150px;
+    }
+
+    &__address-copyright {
+        margin: 0 auto;
+        margin-top: 20px;
+        padding-bottom: 12px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid var(--color-secondary-black);
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__menu {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+
+    &__info {
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+
+    &__br {
+        padding: 20px 0;
+    }
+}
+
+
+.footer-mobile {
+
+    display: flex;
+    background-color: #f3f6f4;
+    padding: 40px 20px 40px;
+    font-family: sans-serif;
+    color: #333;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: none;
+    }
+
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+
+        @media screen and (min-width:$bp-tablet) {
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(2, 200px);
+            gap: 50px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &__link {
+        margin-bottom: 8px;
+    }
+
+    &__section {
+        text-decoration: none;
+        color: #333;
+    }
+
+    &__text {
+        margin: 6px 0;
+        font-size: 16px;
+    }
+
+
+    &__bottom {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+.royal-mail-logo {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    width: 100px;
+    margin-top: 10px;
+}

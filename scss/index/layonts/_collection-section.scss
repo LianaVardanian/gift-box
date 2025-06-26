@@ -1,0 +1,90 @@
+.collection-section {
+    @media screen and (min-width:$bp-desktop) {
+        padding: 24px 20px 96px;
+    }
+
+    &__content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            gap: 77px;
+        }
+
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        &.hidden {
+            display: flex;
+
+            @media screen and (min-width:$bp-desktop) {
+                display: none;
+            }
+
+        }
+    }
+
+
+    &__image {
+        width: 290px;
+        border-radius: 8px;
+
+        @media screen and (min-width:$bp-desktop) {
+            width: 350px;
+            border-radius: 0;
+        }
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 168px;
+            height: 54px;
+            gap: 10px;
+            border-radius: 2px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: var(--color-secondary-black);
+            background-color: transparent;
+        }
+
+    }
+
+    &__button-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+        left: 75px;
+        width: 140px;
+        height: 54px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--color-secondary-black);
+        background-color: var(--milk);
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+    }
+}

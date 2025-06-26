@@ -1,0 +1,251 @@
+.contact-section {
+    background: white;
+
+    @media screen and (min-width:$bp-desktop) {
+        position: relative;
+        background: linear-gradient(180deg, rgba(167, 147, 133, 0.15) 0%, rgba(167, 147, 133, 0) 100%);
+        padding-bottom: 83px;
+    }
+
+    &__content {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            gap: 112px;
+        }
+    }
+
+    &__title {
+        padding-top: 53px;
+    }
+
+    &::before {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            content: '';
+            position: absolute;
+            background-image: url('/images/leaf-decor.png');
+            top: 100px;
+            left: 31px;
+            z-index: 3;
+            width: 610px;
+            height: 476px;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__mobile {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__mobile-image {
+        width: 200px;
+    }
+
+    &__mobile-link {
+        display: flex;
+        display: flex;
+        max-width: 100%;
+        width: 864px;
+        font-size: 20px;
+        color: var(--color-secondary-black);
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        align-items: center;
+        padding-top: 15px;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+
+
+    }
+
+    &__insta-button {
+        width: 204px;
+        height: 46px;
+        border: 1px solid var(--color-secondary-black);
+        border-radius: 2px;
+        background-color: var(--color-white);
+        font-family: 'Roboto Condensed';
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 12px 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    &__insta-link {
+        text-transform: uppercase;
+        color: var(--color-secondary-black);
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 26px;
+
+    }
+
+}
+
+.contact-grid {
+
+    &__content {
+        @media screen and (min-width:$bp-desktop) {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            margin: 0 auto;
+        }
+
+    }
+
+    &__hover {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__image img {
+        object-fit: cover;
+        display: block;
+    }
+
+    &__hover--big {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            grid-row: 1 / 3;
+            grid-column: 1/ 2;
+        }
+
+    }
+}
+
+.contact-grid__image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-grid__hover:hover .overlay {
+    opacity: 1;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    color: white;
+
+    font-weight: bold;
+}
+
+.icons img {
+    width: 15px;
+    height: 15px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+
+
+
+//
+
+.mobile-grid {
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+        }
+    }
+
+    &__hover {
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__image img {
+        width: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+
+.mobile-grid__image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-grid__hover:hover .overlay {
+    opacity: 1;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    color: white;
+
+    font-weight: bold;
+}
+
+.icons img {
+    width: 15px;
+    height: 15px;
+}
+
+.text {
+    font-size: 14px;
+}

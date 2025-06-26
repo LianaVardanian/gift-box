@@ -1,0 +1,67 @@
+.advantages-section {
+    position: relative;
+    padding-bottom: 40px;
+
+    @media screen and (min-width:$bp-desktop) {
+        padding-bottom: 82px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        min-width: 300px;
+
+        @media screen and (min-width:$bp-tablet) {
+            max-width: 850px;
+        }
+
+        @media screen and (min-width:$bp-desktop) {
+            max-width: 1045px;
+            font-weight: 300;
+            font-size: 24px;
+            color: var(--color-primary-dark);
+            text-align: center;
+            line-height: 1.2;
+        }
+
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid var(--color-primary-dark);
+        width: 230px;
+    }
+
+    &__text {
+        display: none;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: flex;
+            font-family: Roboto Condensed;
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    &__mobile-text {
+        display: flex;
+        font-family: Roboto Condensed;
+        font-weight: 300;
+        font-size: 24px;
+        padding: 0 20px;
+
+        @media screen and (min-width:$bp-desktop) {
+            display: none;
+
+        }
+    }
+}
