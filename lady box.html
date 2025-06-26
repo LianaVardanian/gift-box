@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>little lady box</title>
+    <link rel="stylesheet" href="./css/mainmin.css">
+</head>
+
+<header class="box-section header-section">
+    <div class="container">
+        <div class="header-section__content">
+            <div class="header-section__logo">
+                <a href="./index.html"> <img src="./images/LOGO.png" alt="logo gift box"></a>
+            </div>
+
+            <div class="header-section__icons">
+                <div class="account-menu">
+                    <div class="menu-trigger">
+                        <div class="header-section__icons"><img src="./images/Person.svg" alt="customer"></div>
+                        <div class="dropdown">
+                            <div class="dropdown__link gap"><a href="#">Sign in</a>|<a href="">Join</a></div>
+                            <div class="dropdown__link"><a href="#">My account</a></div>
+                            <div class="dropdown__link"><a href="#">My orders</a></div>
+                            <div class="dropdown__link"><a href="#">My returns</a></div>
+                            <div class="dropdown__link"><a href="#">Returns information</a></div>
+                            <div class="dropdown__link"><a href="#">Contact preferences</a></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./bag.html"><img src="/images/heart.svg" alt="favorit"></a>
+                <a href="./bag.html"><img src="/images/shopping-bag.svg" alt="buy"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalogue-section__container">
+        <nav class="header-section__nav">
+            <ul class="header-section__list uppercase">
+                <li><a class="header-section__link" href="./index.html">home <img class="header-section__catalogue"
+                            src="./images/Chevron Down.png" alt=""></a>
+                </li>
+                <li><a class="header-section__link" href="./catalogue.html">catalogue <img
+                            class="header-section__catalogue" src="./images/Chevron Down.png" alt=""></a></li>
+                <li><a class="header-section__link" href="./build a box.html">build your box <img
+                            class="header-section__catalogue" src="./images/Chevron Down.png" alt=""></a>
+                </li>
+                <li><a class="header-section__link" href="./services.html">services<img
+                            class="header-section__catalogue" src="./images/Chevron Down.png" alt=""></a> </li>
+                <li><a class="header-section__link" href="">photo & video <img class="header-section__catalogue"
+                            src="./images/Chevron Down.png" alt=""></a></a></li>
+                <li><a class="header-section__link" href="">payment & delivery <img class="header-section__catalogue"
+                            src="./images/Chevron Down.png" alt=""></a>
+                </li>
+                <li><a class="header-section__link" href="">guarantee & return<img class="header-section__catalogue"
+                            src="./images/Chevron Down.png" alt=""></a>
+                </li>
+                <li><a class="header-section__link" href="./faq.html"> f.a.q<img class="header-section__catalogue"
+                            src="./images/Chevron Down.png" alt=""></a> </li>
+                <li><a class="header-section__link" href="./testimonials.html">testimonials<img
+                            class="header-section__catalogue" src="./images/Chevron Down.png" alt=""></a></li>
+            </ul>
+        </nav>
+
+        <nav class="catalogue-section__nav">
+            <ul class="catalogue-section__list">
+                <li><a class="catalogue-section__link" href="./birthbay.html">Birthday gift</a></li>
+                <li><a class="catalogue-section__link" href="#advantages-section">Christmas</a></li>
+                <li><a class="catalogue-section__link" href="">New Year
+                    </a></li>
+                <li><a class="catalogue-section__link" href="hero-section__link">Wedding</a></li>
+                <li><a class="catalogue-section__link" href="">Valentine's day</a></li>
+                <li><a class="catalogue-section__link" href="./lady box.html">Baby Shower</a></li>
+                <li><a class="catalogue-section__link" href="">Father's Day</a></li>
+                <li><a class="catalogue-section__link" href="">Mother's Day</a></li>
+                <li><a class="catalogue-section__link" href="">Easter</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="navigation-section section">
+        <span class="navigation-section__nav"><a href="./index.html">Home/</a> <a href="./catalogue.html">Catalogue/
+            </a><a href="./lady box.html">Baby Shower/ </a> <a href="#">Large Lady Box
+            </a> </span>
+    </div>
+    <section class="list-section section">
+        <h1 class="list-section__title uppercase">Large Lady Box - Harvest Flower</h1>
+        <div class="list-section__grid">
+            <div>
+
+                <div class="slider">
+                    <div class="main-image">
+                        <img id="current" src="./images/lady box/Rectangle 35.png" alt="Main image">
+                        <span class="zoom-icon" onclick="openModal()"><img src="./images/lady box/Zoom In.png"
+                                alt=""></span>
+                    </div>
+
+                    <div class="thumbnails-wrapper">
+                        <button class="scroll-btn left" onclick="scrollThumbnails(-1)"><img
+                                src="./images/lady box/Chevron Right.png" alt=""></button>
+                        <div class="thumbnails-container">
+                            <div class="thumbnails" id="thumbnails">
+                                <img src="./images/lady box/Rectangle 35.png" alt="">
+                                <img src="./images/lady box/Rectangle 36.png" alt="">
+                                <img src="./images/lady box/Rectangle 41.png" alt="">
+                                <img src="./images/lady box/Rectangle 42.png" alt="">
+                                <img src="./images/lady box/Rectangle 35.png" alt="">
+                                <img src="./images/lady box/Rectangle 36.png" alt="">
+                                <img src="./images/lady box/Rectangle 41.png" alt="">
+                                <img src="./images/lady box/Rectangle 42.png" alt="">
+                            </div>
+                        </div>
+                        <button class="scroll-btn right" onclick="scrollThumbnails(1)"><img
+                                src="./images/lady box/Chevron Right.png" alt=""></button>
+                    </div>
+                </div>
+
+                <div id="modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modal-img">
+                </div>
+                <button class="list-section__button ">watch video <img src="./images/lady box/Polygon 1.png" alt="">
+                </button>
+                <img src="./images/lady box/Share.png" alt="">
+                <h2 class="list-section__title-box">Box details</h2>
+                <p class="list-section__text-box">
+                    Welcome a new Autumn babe with our limited edition large Harvest Flower Gift Box, featuring a
+                    beautiful
+                    muslin swaddle
+                    by Mebie Baby in vintage floral print, muslin harvest flower baby bibdana, wooden heart teething toy
+                    (personalization
+                    optional) Old Whaling Company Oatmeal Milk Bath Bomb, ceramic "Sweater Weather" mug, and 3 kettle
+                    cooked
+                    caramels. </p>
+
+                <p class="list-section__text-box pad15">Beautifully packaged in our keepsake Wooden Box and tied with a
+                    bow
+                    and dried floral bundle. The
+                    perfect
+                    gift for a baby
+                    shower or a new little one welcoming present </p>
+            </div>
+
+            <div>
+                <div class="list-section__star-list">
+                    <img src="./images/lady box/Star.png" alt=""><img src="./images/lady box/Star.png" alt=""><img
+                        src="./images/lady box/Star.png" alt=""><img src="./images/lady box/Star.png" alt=""><img
+                        src="./images/lady box/Star.png" alt="">
+                    <span class="list-section__reviews">15 Reviews</span>
+                </div>
+                <div class="list-section__labels"> <span>£ 100</span>
+                    <span class="list-section__sold">£ 135</span>
+                </div>
+
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <select id="quantity">
+                        <option value="1">1 one</option>
+                        <option value="2">2 two</option>
+                        <option value="3">3 three</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="colour">Colour</label>
+                    <select id="colour">
+                        <option value="orange">🟠 orange</option>
+                        <option value="blue">🔵 blue</option>
+                        <option value="green">🟢 green</option>
+                    </select>
+
+                </div>
+
+
+                <div class="list-section__add-button"><button class="list-section__add-btn uppercase">add to bag
+                    </button><button class="list-section__heart"><img src="./images/lady box/heart 1.png"
+                            alt=""></button>
+                </div>
+                <p class="list-section__royal">ROYAL MAIL Free Delivery</p>
+
+                <div class="list-section__faq">
+                    <ul class="faq-section__box">
+                        <li class="faq-section__container">
+                            <div class="faq-section__content">
+                                <h2 class="faq-section__question  list-section__return">
+                                    Returns
+                                </h2>
+                                <p class="faq-section__answer">
+                                    Due to the detailed nature and our high order volume, our current order
+                                    processing time is 3-5 business days, not
+                                    including transit time. All orders will ship via Royal Mail Special delivery for
+                                    FREE ( UK delivery only! )and transit
+                                    time depends on proximity to our location in London, UK. Please contact us via
+                                    e-mail Service@SimpleBrownBox.co.uk for
+                                    large quantity orders of 10+ gift boxes shipping to the same location.
+                                </p>
+                            </div>
+                            <button class="faq-section__button"><img src="./images/faq/button.png" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <p class="list-section__recent">Most recent review</p>
+                <div class="list-section__rating">
+                    <div class="list-section__rating"><img class="list-section__stars"
+                            src="./images/lady box/Star 1.png" alt=""><img class="list-section__stars"
+                            src="./images/lady box/Star 1.png" alt=""><img class="list-section__stars"
+                            src="./images/lady box/Star 1.png" alt=""><img class="list-section__stars"
+                            src="./images/lady box/Star 3.png" alt=""><img class="list-section__stars"
+                            src="./images/lady box/Star 1.png" alt=""><img class="list-section__stars"
+                            src="./images/lady box/Star.png" alt="">
+                    </div>
+                    <span class="list-section__ago">1 day ago</span>
+                </div>
+                <p class="list-section__purchaser">Verified Purchaser</p>
+                <h3 class="list-section__expected-title uppercase">Just what I EXPECTED</h3>
+                <p class="list-section__expected-text">This box is good for the price. Everything looks very cute and
+                    nice.
+                    Colours are very natural.
+                    This present looked very effective</p>
+                <button class="list-section__view-btn">VIEW ALL REVIEWS</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="viewed-section">
+        <div class="container">
+            <h2 class="viewed-section__title">RECENTLY VIEWED</h2>
+            <div class="viewed-section__images">
+                <div class="viewed-section__cards"><img src="./images/catalogue-images/Rectangle 26.png" alt="">
+                    <p>Best Day Ever Gift Box</p>
+                    <div class="grid-section__labels">
+                        <span>£</span>
+                        <span>100</span>
+                    </div>
+                </div>
+                <div class="viewed-section__cards"><img src="./images/catalogue-images/Rectangle 27.png" alt="">
+                    <p>Dwell Box - Large</p>
+                    <div class="grid-section__labels">
+                        <span>£</span>
+                        <span>180</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer ">
+        <div class="container">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__link"><a href="./index.html">Home</a></li>
+                        <li class="footer__link"><a href="#">Birthday Gift</a></li>
+                        <li class="footer__link"><a href="#">Catalogue</a></li>
+                        <li class="footer__link"><a href="#">Christmas</a></li>
+                        <li class="footer__link"><a href="#">Services</a></li>
+                        <li class="footer__link"><a href="#">New Year</a></li>
+                        <li class="footer__link"><a href="#">Payment</a></li>
+                        <li class="footer__link"><a href="#">Wedding</a></li>
+                        <li class="footer__link"><a href="#">Delivery</a></li>
+                        <li class="footer__link"><a href="#">Valentine's Day</a></li>
+                        <li class="footer__link"><a href="#">Return</a></li>
+                        <li class="footer__link"><a href="#">Baby Shower</a></li>
+                        <li class="footer__link"><a href="#">Privacy Policy</a></li>
+                        <li class="footer__link"><a href="#">Mother's Day</a></li>
+                        <li class="footer__link"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer__link"><a href="#">Father's Day</a></li>
+                    </ul>
+                </nav>
+                <address class="footer__address">
+                    <ul class="footer__address-menu">
+                        <h2 class="footer__title">Information</h2>
+                        <li>Simple Brown Box Ltd</li>
+
+                        <div class="footer__br">
+                            <li><a href="https://maps.app.goo.gl/JqT5Rs9PZ59cUHjK7" target="_blank"> Flat 44
+                                    <br> Manley Heights<br>
+                                    1 South Way
+                                    <br> Wembley
+                                    HA9 0JU
+                                </a></li>
+                        </div>
+                        <li><a href="tel:+441234567899">Phone: +44 1234567899</a></li>
+                        <li><a href="mailto:company@simplebrownbox.co.uk">Company@SimpleBrownBox.co.uk</a></li>
+                        <li><a href="mailto:service@simplebrownbox.co.uk">Service@SimpleBrownBox.co.uk</a></li>
+                        <li><a href="mailto:hello@simplebrownbox.co.uk">Hello@SimpleBrownBox.co.uk</a></li>
+                    </ul>
+                </address>
+
+                <div class="footer__account">
+                    <h2 class="footer__title">My Account</h2>
+                    <a class="footer__address-link" href="#">Registration</a>
+                    <a class="footer__address-link" href="#">Log in</a>
+                    <a class="footer__address-link" href="#">My wishlist</a>
+                    <a class="footer__address-link" href="#">View bag</a>
+                    <img src="./images/payment 1.png" alt="payment">
+                    <p class="footer_info"><span class="uppercase">We accept all major cards.</span> All the
+                        payments are
+                        made
+                        through the Secure Platform
+                        PAYPAL.</p>
+                </div>
+                <p class="footer__address-copyright">Copyright © 2022 «Simple Brown Box»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/faq-script.js"></script>
+    <script src="./js/slider-lady.js"> </script>
+</body>
+
+</html>
